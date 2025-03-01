@@ -1,5 +1,8 @@
 from flask import Flask, jsonify
 import json
+import os
+
+os.system(pip install flask -y)
 
 app = Flask(__name__)
 
