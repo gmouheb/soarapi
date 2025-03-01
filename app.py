@@ -1,8 +1,9 @@
-from flask import Flask, jsonify
-import json
 import os
 
 os.system('pip install flask -y')
+
+from flask import Flask, jsonify
+import json
 
 app = Flask(__name__)
 
