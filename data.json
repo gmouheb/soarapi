@@ -1,0 +1,851 @@
+[
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "CVE-2025-21502"
+        ],
+        "CVSS Base Score": "4.0",
+        "Description": "The version of OpenJDK installed on the remote host is 8 prior to 8u432 / 11.0.0 prior to 11.0.25 / 17.0.0 prior to 17.0.13 / 21.0.0 prior to 21.0.5 / 23.0.0 prior to 23.0.1. It is, therefore, affected by a vulnerability as referenced in the 2025-01-21 advisory.\n\nPlease Note: Java CVEs do not always include OpenJDK versions, but are confirmed separately by Tenable using the patch versions from the referenced OpenJDK security advisory.\n\n  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of     Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u431-perf,     11.0.25, 17.0.13, 21.0.5, 23.0.1; Oracle GraalVM for JDK: 17.0.13, 21.0.5, 23.0.1; Oracle GraalVM     Enterprise Edition: 20.3.16 and 21.3.12. Difficult to exploit vulnerability allows unauthenticated     attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK,     Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized     update, insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM     Enterprise Edition accessible data as well as unauthorized read access to a subset of Oracle Java SE,     Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be     exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the     APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web     Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from     the internet) and rely on the Java sandbox for security. (CVE-2025-21502)\n\nNote that Nessus has not tested for this issue but has instead relied only on the application's self-reported version number.",
+        "Severity": "2",
+        "Exploit Available": "false",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "CVE-2025-21502"
+        ],
+        "CVSS Base Score": "4.0",
+        "Description": "The version of OpenJDK installed on the remote host is 8 prior to 8u432 / 11.0.0 prior to 11.0.25 / 17.0.0 prior to 17.0.13 / 21.0.0 prior to 21.0.5 / 23.0.0 prior to 23.0.1. It is, therefore, affected by a vulnerability as referenced in the 2025-01-21 advisory.\n\nPlease Note: Java CVEs do not always include OpenJDK versions, but are confirmed separately by Tenable using the patch versions from the referenced OpenJDK security advisory.\n\n  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of     Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u431-perf,     11.0.25, 17.0.13, 21.0.5, 23.0.1; Oracle GraalVM for JDK: 17.0.13, 21.0.5, 23.0.1; Oracle GraalVM     Enterprise Edition: 20.3.16 and 21.3.12. Difficult to exploit vulnerability allows unauthenticated     attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK,     Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized     update, insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM     Enterprise Edition accessible data as well as unauthorized read access to a subset of Oracle Java SE,     Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability can be     exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the     APIs. This vulnerability also applies to Java deployments, typically in clients running sandboxed Java Web     Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from     the internet) and rely on the Java sandbox for security. (CVE-2025-21502)\n\nNote that Nessus has not tested for this issue but has instead relied only on the application's self-reported version number.",
+        "Severity": "2",
+        "Exploit Available": "false",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "CVE-2025-23083",
+            "CVE-2025-23084",
+            "CVE-2025-23085"
+        ],
+        "CVSS Base Score": "5.0",
+        "Description": "The version of Node.js installed on the remote host is prior to 18.20.6, 20.18.2, 22.13.1, 23.6.1. It is, therefore, affected by multiple vulnerabilities as referenced in the Tuesday, January 21, 2025 Security Releases advisory.\n\n  - A memory leak could occur when a remote peer abruptly closes the socket without sending a GOAWAY     notification. Additionally, if an invalid header was detected by nghttp2, causing the connection to be     terminated by the peer, the same leak was triggered. This flaw could lead to increased memory consumption     and potential denial of service under certain conditions. This vulnerability affects HTTP/2 Server users     on Node.js v18.x, v20.x, v22.x and v23.x. Impact: Thank you, to newtmitch for reporting this vulnerability     and thank you RafaelGSS for fixing it. (CVE-2025-23085)\n\n  - With the aid of the diagnostics_channel utility, an event can be hooked into whenever a worker thread is     created. This is not limited only to workers but also exposes internal workers, where an instance of them     can be fetched, and its constructor can be grabbed and reinstated for malicious usage. This vulnerability     affects Permission Model users (--permission) on Node.js v20, v22, and v23. Impact: Thank you, to     leodog896 for reporting this vulnerability and thank you RafaelGSS for fixing it. (CVE-2025-23083)\n\n  - A vulnerability has been identified in Node.js, specifically affecting the handling of drive names in the     Windows environment. Certain Node.js functions do not treat drive names as special on Windows. As a     result, although Node.js assumes a relative path, it actually refers to the root directory. On Windows, a     path that does not start with the file separator is treated as relative to the current directory. This     vulnerability affects Windows users of path.join API. Impact: Thank you, to taise for reporting this     vulnerability and thank you tniessen for fixing it. (CVE-2025-23084)\n\nNote that Nessus has not tested for these issues but has instead relied only on the application's self-reported version number.",
+        "Severity": "3",
+        "Exploit Available": "false",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "libexiv2 is installed on the remote Linux / Unix host.\n\nAdditional information:\n\n  - More paths will be searched and the timeout for the search will be increased     if 'Perform thorough tests' setting is enabled.\n\n  - The plugin timeout can be set to a custom value other than the     plugin's default of 30 minutes via the 'timeout.204828' scanner     setting in Nessus 8.15.1 or later.\n\n    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Exiv2 is installed on the remote Linux / Unix host.\n\nAdditional information:\n\n  - More paths will be searched and the timeout for the search will be increased     if 'Perform thorough tests' setting is enabled.\n\n  - The plugin timeout can be set to a custom value other than the     plugin's default of 30 minutes via the 'timeout.204827' scanner     setting in Nessus 8.15.1 or later.\n\n    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The host contains Hierarchical Data Format HDF5 (.h5) files. HDF5 files are often used as Machine Learning Model Files.\n\nNote that this plugin only detects files in commonly used installation directories or a user specified search path.\n - Enable Thorough Tests to allow more time to scan.\n - Enable Report Verbosity to show more than 250 files in plugin output.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The Ruby programming language is installed on the remote Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "CVE-2024-22018",
+            "CVE-2024-22020",
+            "CVE-2024-27980",
+            "CVE-2024-36137",
+            "CVE-2024-37372"
+        ],
+        "CVSS Base Score": "9.0",
+        "Description": "The version of Node.js installed on the remote host is prior to 18.20.4, 20.15.1, 22.4.1. It is, therefore, affected by multiple vulnerabilities as referenced in the Monday, July 8, 2024 Security Releases advisory.\n\n  - The CVE-2024-27980 was identified as an incomplete fix for the BatBadBut vulnerability. This vulnerability     arises from improper handling of batch files with all possible extensions on Windows via     child_process.spawn / child_process.spawnSync. A malicious command line argument can inject arbitrary     commands and achieve code execution even if the shell option is not enabled. This vulnerability affects     all users of child_process.spawn and child_process.spawnSync on Windows in all active release lines.\n    Impact: Thank you, to tianst for reporting this vulnerability and thank you RafaelGSS for fixing it.\n    (CVE-2024-27980)\n\n  - A security flaw in Node.js allows a bypass of network import restrictions. By embedding non-network     imports in data URLs, an attacker can execute arbitrary code, compromising system security. Verified on     various platforms, the vulnerability is mitigated by forbidding data URLs in network imports. Exploiting     this flaw can violate network import security, posing a risk to developers and servers. Impact: Thank you,     to dittyroma for reporting this vulnerability and thank you RafaelGSS for fixing it. (CVE-2024-22020)\n\n  - A vulnerability has been identified in Node.js, affecting users of the experimental permission model when     the --allow-fs-write flag is used. Node.js Permission Model do not operate on file descriptors, however,     operations such as fs.fchown or fs.fchmod can use a read-only file descriptor to change the owner and     permissions of a file. This vulnerability affects all users using the experimental permission model in     Node.js 20 and Node.js 22. Please note that at the time this CVE was issued, the permission model is an     experimental feature of Node.js. Impact: Thank you, to 4xpl0r3r for reporting this vulnerability and thank     you RafaelGSS for fixing it. (CVE-2024-36137)\n\n  - A vulnerability has been identified in Node.js, affecting users of the experimental permission model when     the --allow-fs-read flag is used. This flaw arises from an inadequate permission model that fails to     restrict file stats through the fs.lstat API. As a result, malicious actors can retrieve stats from files     that they do not have explicit read access to. This vulnerability affects all users using the experimental     permission model in Node.js 20 and Node.js 22. Please note that at the time this CVE was issued, the     permission model is an experimental feature of Node.js. Impact: Thank you, to haxatron1 for reporting this     vulnerability and thank you RafaelGSS for fixing it. (CVE-2024-22018)\n\n  - The Permission Model assumes that any path starting with two backslashes \\ has a four-character prefix     that can be ignored, which is not always true. This subtle bug leads to vulnerable edge cases. This     vulnerability affects Windows users of the Node.js Permission Model in version v22.x and v20.x Impact:\n    Thank you, to tniessen for reporting this vulnerability and thank you RafaelGSS for fixing it.\n    (CVE-2024-37372)\n\nNote that Nessus has not tested for these issues but has instead relied only on the application's self-reported version number.",
+        "Severity": "3",
+        "Exploit Available": "false",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "A NumPy Python library is installed on the remote host. \n\nNote that Nessus has relied upon on the application's self-reported version number.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Libndp is installed on the remote Linux / Unix host.\n\nAdditional information:\n\n  - More paths will be searched and the timeout for the search will be increased     if 'Perform thorough tests' setting is enabled.\n\n  - The plugin timeout can be set to a custom value other than the     plugin's default of 30 minutes via the 'timeout.200214' scanner     setting in Nessus 8.15.1 or later.\n\n    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin utilizes various Nessus detection methods and reports software identified by to Nessus and known to utilize \"Artificial Intelligence\" (AI) and Large Language Model (LLM) technology.\n\nNote that this plugin uses several detection methods. The products reported by this plugin will grow as more detections and methods are added.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to collect time zone information from the remote   Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "CVE-2024-27982",
+            "CVE-2024-27983"
+        ],
+        "CVSS Base Score": "5.4",
+        "Description": "The version of Node.js installed on the remote host is prior to 18.20.1, 20.12.1, 21.7.2. It is, therefore, affected by multiple vulnerabilities as referenced in the Wednesday, April 3, 2024 Security Releases advisory.\n\n  - An attacker can make the Node.js HTTP/2 server completely unavailable by sending a small amount of HTTP/2     frames packets with a few HTTP/2 frames inside. It is possible to leave some data in nghttp2 memory after     reset when headers with HTTP/2 CONTINUATION frame are sent to the server and then a TCP connection is     abruptly closed by the client triggering the Http2Session destructor while header frames are still being     processed (and stored in memory) causing a race condition. Impacts: Thank you, to bart for reporting this     vulnerability and Anna Henningsen for fixing it. (CVE-2024-27983)\n\n  - The team has identified a vulnerability in the http server of the most recent version of Node, where     malformed headers can lead to HTTP request smuggling. Specifically, if a space is placed before a content-     length header, it is not interpreted correctly, enabling attackers to smuggle in a second request within     the body of the first. Impacts: Thank you, to bpingel for reporting this vulnerability and Paolo Insogna     for fixing it.  Summary The Node.js project will release new versions of the 18.x, 20.x, 21.x releases     lines on or shortly after, Wednesday, April 3, 2024 in order to address: (CVE-2024-27982)\n\nNote that Nessus has not tested for these issues but has instead relied only on the application's self-reported version number.",
+        "Severity": "3",
+        "Exploit Available": "false",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Tukaani XZ Utils is installed on the remote Linux / Unix host.\n\nXZ Utils consists of several components, including:\n  - liblzma\n  - xz\n\nAdditional information:\n\n  - More paths will be searched and the timeout for the search will be increased     if 'Perform thorough tests' setting is enabled.\n\n  - The plugin timeout can be set to a custom value other than the     plugin's default of 30 minutes via the 'timeout.192709' scanner     setting in Nessus 8.15.1 or later.\n\n    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "CVE-2023-46809",
+            "CVE-2024-21890",
+            "CVE-2024-21891",
+            "CVE-2024-21892",
+            "CVE-2024-21896",
+            "CVE-2024-22017",
+            "CVE-2024-22019"
+        ],
+        "CVSS Base Score": "9.0",
+        "Description": "The version of Node.js installed on the remote host is prior to 18.19.1, 20.11.1, 21.6.2. It is, therefore, affected by multiple vulnerabilities as referenced in the Wednesday February 14 2024 Security Releases advisory.\n\n  - On Linux, Node.js ignores certain environment variables if those may have been set by an unprivileged user     while the process is running with elevated privileges with the only exception of CAP_NET_BIND_SERVICE. Due     to a bug in the implementation of this exception, Node.js incorrectly applies this exception even when     certain other capabilities have been set. This allows unprivileged users to inject code that inherits the     process's elevated privileges. Impacts: Thank you, to Tobias Nieen for reporting this vulnerability and     for fixing it. (CVE-2024-21892)\n\n  - A vulnerability in Node.js HTTP servers allows an attacker to send a specially crafted HTTP request with     chunked encoding, leading to resource exhaustion and denial of service (DoS). The server reads an     unbounded number of bytes from a single connection, exploiting the lack of limitations on chunk extension     bytes. The issue can cause CPU and network bandwidth exhaustion, bypassing standard safeguards like     timeouts and body size limits. Impacts: Thank you, to Bartek Nowotarski for reporting this vulnerability     and thank you Paolo Insogna for fixing it. (CVE-2024-22019)\n\n  - The permission model protects itself against path traversal attacks by calling path.resolve() on any paths     given by the user. If the path is to be treated as a Buffer, the implementation uses Buffer.from() to     obtain a Buffer from the result of path.resolve(). By monkey-patching Buffer internals, namely,     Buffer.prototype.utf8Write, the application can modify the result of path.resolve(), which leads to a path     traversal vulnerability. Impacts: Please note that at the time this CVE was issued, the permission model     is an experimental feature of Node.js. Thank you, to Tobias Nieen for reporting this vulnerability and     for fixing it. (CVE-2024-21896)\n\n  - setuid() does not affect libuv's internal io_uring operations if initialized before the call to setuid().\n    This allows the process to perform privileged operations despite presumably having dropped such privileges     through a call to setuid(). Impacts: Thank you, to valette for reporting this vulnerability and thank you     Tobias Nieen for fixing it. (CVE-2024-22017)\n\n  - A vulnerability in the privateDecrypt() API of the crypto library, allowed a covert timing side-channel     during PKCS#1 v1.5 padding error handling. The vulnerability revealed significant timing differences in     decryption for valid and invalid ciphertexts. This poses a serious threat as attackers could remotely     exploit the vulnerability to decrypt captured RSA ciphertexts or forge signatures, especially in scenarios     involving API endpoints processing Json Web Encryption messages. Impacts: Thank you, to hkario for     reporting this vulnerability and thank you Michael Dawson for fixing it. (CVE-2023-46809)\n\n  - Node.js depends on multiple built-in utility functions to normalize paths provided to node:fs functions,     which can be overwitten with user-defined implementations leading to filesystem permission model bypass     through path traversal attack. Impacts: Please note that at the time this CVE was issued, the permission     model is an experimental feature of Node.js. Thank you, to xion for reporting this vulnerability and thank     you Rafael Gonzaga for fixing it. (CVE-2024-21891)\n\n  - The Node.js Permission Model does not clarify in the documentation that wildcards should be only used as     the last character of a file path. For example: --allow-fs-read=/home/node/.ssh/*.pub will ignore pub and     give access to everything after .ssh/. Impacts: Please note that at the time this CVE was issued, the     permission model is an experimental feature of Node.js. Thank you, to Tobias Nieen for reporting this     vulnerability and thank you Rafael Gonzaga for fixing it. (CVE-2024-21890)\n\nNote that Nessus has not tested for these issues but has instead relied only on the application's self-reported version number.",
+        "Severity": "3",
+        "Exploit Available": "false",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Jmcnamara Spreadsheet-ParseExcel is installed on the remote Unix host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Vim is installed on the remote Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "libcurl is installed on the remote Linux / Unix host.\n\nAdditional information:\n\n  - More paths will be searched and the timeout for the search will be increased     if 'Perform thorough tests' setting is enabled.\n\n  - The plugin timeout can be set to a custom value other than the     plugin's default of 30 minutes via the 'timeout.182848' scanner     setting in Nessus 8.15.1 or later.\n\n    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Curl (also known as curl and cURL) is installed on the remote Linux / Unix host.\n\nAdditional information:\n\n  - More paths will be searched and the timeout for the search will be increased     if 'Perform thorough tests' setting is enabled.\n\n  - The plugin timeout can be set to a custom value other than the     plugin's default of 30 minutes via the 'timeout.182774' scanner     setting in Nessus 8.15.1 or later.\n\n    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to retrieve network routing information the remote host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Reports details about packages installed via package managers",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Node.js is installed on the remote Linux / UNIX host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Version information for SQLite was retrieved from the remote host.  SQLite is an embedded database written in C.\n\n  - To discover instances of SQLite that are not in PATH,     or installed via a package manager, 'Perform thorough tests'     setting must be enabled.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Enumerates the IP address assignment method(static/dynamic).",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to parse the Network Interface data on the remote host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Enumerates the PATH variables of the current scan user.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "OpenSSL was detected on the remote Linux host.\n\nThe plugin timeout can be set to a custom value other than the plugin's default of 15 minutes via the 'timeout.168007' scanner setting in Nessus 8.15.1 or later.\n\nPlease see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.\n\nNote: This plugin leverages the '-maxdepth' find command option, which is a feature implemented by the GNU find binary. If the target does not support this option, such as HP-UX and AIX devices, users will need to enable 'thorough tests' in their scan policy to run the find command without using a '-maxdepth' argument.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Tenable Nessus is installed on the remote Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Report the mounted devices information on the target machine at scan time using the following commands.\n/bin/df -h /bin/lsblk /bin/mount -l\n\nThis plugin only reports on the tools available on the system and omits any tool that did not return information when the command was ran.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to determine that it is possible for plugins to find and identify versions of software on the target host. Software that is not managed by the operating system is typically found and characterized using these commands.  This was measured by running commands used by unmanaged software plugins and validating their output against expected results.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Libgcrypt, a cryptography library, was found on the remote host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "One or more instances of OpenJDK Java are installed on the remote host.  This may include private JREs bundled with the Java Development Kit (JDK).\n\nNotes:\n\n  - Addition information provided in plugin     Java Detection and Identification (Unix)\n\n  - Additional instances of Java may be discovered by enabling thorough     tests",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "One or more instances of OpenJDK Java are installed on the remote host.  This may include private JREs bundled with the Java Development Kit (JDK).\n\nNotes:\n\n  - Addition information provided in plugin     Java Detection and Identification (Unix)\n\n  - Additional instances of Java may be discovered by enabling thorough     tests",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "One or more instances of Java are installed on the remote Linux / Unix host. This may include private JREs bundled with the Java Development  Kit (JDK).\nNotes:\n\n  - This plugin attempts to detect Oracle and non-Oracle JRE instances     such as Zulu Java, Amazon Corretto, AdoptOpenJDK, IBM Java, etc\n  - To discover instances of JRE that are not in PATH,     or installed via a package manager, 'Perform thorough tests'     setting must be enabled.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Domain names and IP addresses from Apache HTTP Server configuration file were retrieved from the remote host. Apache HTTP Server is a webserver environment written in C. Note: Only Linux- and Unix-based hosts are currently supported by this plugin.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Apache HTTP Server is installed on the remote Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to determine that valid credentials were provided for an authentication protocol available on the remote target because it was able to successfully authenticate directly to the remote target using that authentication protocol at least once. Authentication was successful because the authentication protocol service was available remotely, the service was able to be identified, the authentication protocol was able to be negotiated successfully, and a set of credentials provided in the scan policy for that authentication protocol was accepted by the remote service. See plugin output for details, including protocol, port, and account.\n\nPlease note the following :\n\n- This plugin reports per protocol, so it is possible for   valid credentials to be provided for one protocol and not   another. For example, authentication may succeed via SSH   but fail via SMB, while no credentials were provided for   an available SNMP service.\n\n- Providing valid credentials for all available   authentication protocols may improve scan coverage, but   the value of successful authentication for a given   protocol may vary from target to target depending upon   what data (if any) is gathered from the target via that   protocol. For example, successful authentication via SSH   is more valuable for Linux targets than for Windows   targets, and likewise successful authentication via SMB   is more valuable for Windows targets than for Linux   targets.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The remote service accepts connections encrypted using TLS 1.3.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "NGINX, a web server with load balancing capabilities, is installed on  the remote Linux / Unix host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The remote service accepts connections encrypted using TLS 1.2.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "One or more PostgreSQL server or client versions have been detected on the remote Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "One or more PostgreSQL server or client versions have been detected on the remote Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to determine OS security patch levels by logging into the remote host and running commands to determine the version of the operating system and its components.  The remote host was identified as an operating system or device that Nessus supports for patch and update assessment.  The necessary information was obtained to perform these checks.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin parses information from the nessusd.dump log file and reports on errors.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Generated report details the running processes on the target machine at scan time.\n  This plugin is informative only and could be used for forensic   investigation, malware detection, and to confirm that your system   processes conform to your system policies.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Valid credentials were provided for an authentication protocol on the remote target and Nessus did not log any subsequent errors or failures for the authentication protocol.\n\nWhen possible, Nessus tracks errors or failures related to otherwise valid credentials in order to highlight issues that may result in incomplete scan results or limited scan coverage. The types of issues that are tracked include errors that indicate that the account used for scanning did not have sufficient permissions for a particular check, intermittent protocol failures which are unexpected after the protocol has been negotiated successfully earlier in the scan, and intermittent authentication failures which are unexpected after a credential set has been accepted as valid earlier in the scan. This plugin reports when none of the above issues have been logged during the course of the scan for at least one authenticated protocol. See plugin output for details, including protocol, port, and account.\n\nPlease note the following :\n\n- This plugin reports per protocol, so it is possible for   issues to be encountered for one protocol and not another.\n  For example, authentication to the SSH service on the   remote target may have consistently succeeded with no   privilege errors encountered, while connections to the SMB   service on the remote target may have failed   intermittently.\n\n- Resolving logged issues for all available authentication   protocols may improve scan coverage, but the value of   resolving each issue for a particular protocol may vary   from target to target depending upon what data (if any) is   gathered from the target via that protocol and what   particular check failed. For example, consistently   successful checks via SSH are more critical for Linux   targets than for Windows targets, and likewise   consistently successful checks via SMB are more critical   for Windows targets than for Linux targets.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to login to the remote host using SSH or local commands and extract the list of installed packages.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Using the supplied credentials, Nessus was able to enumerate the local users and groups on the remote Linux host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin gathers MAC addresses discovered from both remote probing of the host (e.g. SNMP and Netbios) and from running local checks (e.g. ifconfig). It then consolidates the MAC addresses into a single, unique, and uniform list.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Logs generated by other plugins are reported by this plugin. Plugin debugging must be enabled in the policy in order for this plugin to run.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The remote host is missing one or more security patches. This plugin lists the newest version of each patch to install to make sure the remote host is up-to-date.\n\nNote: Because the 'Show missing patches that have been superseded' setting in your scan policy depends on this plugin, it will always run and cannot be disabled.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The remote host has listening ports or established connections that Nessus was able to extract from the results of the 'netstat' command.\n\nNote: The output for this plugin can be very long, and is not shown by default. To display it, enable verbose reporting in scan settings.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The remote host supports the use of SSL ciphers that offer Perfect Forward Secrecy (PFS) encryption.  These cipher suites ensure that recorded SSL traffic cannot be broken at a future date if the server's private key is compromised.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin detects which SSL and TLS versions are supported by the remote service for encrypting communications.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "According to the MAC address of its network adapter, the remote host is a KVM / QEMU virtual machine.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin reports a device's hostname collected via SSH or WMI.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Based on the remote operating system, it is possible to determine what the remote system type is (eg: a printer, router, general-purpose computer, etc).",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "6.4",
+        "Description": "The server's X.509 certificate cannot be trusted. This situation can occur in three different ways, in which the chain of trust can be broken, as stated below :\n\n  - First, the top of the certificate chain sent by the     server might not be descended from a known public     certificate authority. This can occur either when the     top of the chain is an unrecognized, self-signed     certificate, or when intermediate certificates are     missing that would connect the top of the certificate     chain to a known public certificate authority.\n\n  - Second, the certificate chain may contain a certificate     that is not valid at the time of the scan. This can     occur either when the scan occurs before one of the     certificate's 'notBefore' dates, or after one of the     certificate's 'notAfter' dates.\n\n  - Third, the certificate chain may contain a signature     that either didn't match the certificate's information     or could not be verified. Bad signatures can be fixed by     getting the certificate with the bad signature to be     re-signed by its issuer. Signatures that could not be     verified are the result of the certificate's issuer     using a signing algorithm that Nessus either does not     support or does not recognize.\n\nIf the remote host is a public host in production, any break in the chain makes it more difficult for users to verify the authenticity and identity of the web server. This could make it easier to carry out man-in-the-middle attacks against the remote host.",
+        "Severity": "2",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "By using information obtained from a Nessus scan, this plugin reports CPE (Common Platform Enumeration) matches for various hardware and software products found on a host. \n\nNote that if an official CPE is not available for the product, this plugin computes the best possible CPE based on the information available from the scan.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "The remote web server implements Strict Transport Security (STS).\nThe goal of STS is to make sure that a user does not accidentally downgrade the security of his or her browser.\n\nAll unencrypted HTTP connections are redirected to HTTPS.  The browser is expected to treat all cookies as 'secure' and to close the connection in the event of potentially insecure situations.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to enumerate MAC addresses by connecting to the remote host via SSH with the supplied credentials.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to enumerate the network interfaces configured with IPv4 addresses by connecting to the remote host via SSH using the supplied credentials.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to enumerate the network interfaces configured with IPv6 addresses by connecting to the remote host via SSH using the supplied credentials.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This test gives some information about the remote HTTP protocol - the version used, whether HTTP Keep-Alive is enabled, etc... \n\nThis test is informational only and does not denote any security problem.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to identify the remote service by its banner or by looking at the error message it sends when it receives an HTTP request.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to list the software installed on the remote host by calling the appropriate command (e.g., 'rpm -qa' on RPM-based Linux distributions, qpkg, dpkg, etc.).",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin detects which SSL ciphers are supported by the remote service for encrypting communications.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin displays, for each tested host, information about the scan itself :\n\n  - The version of the plugin set.\n  - The type of scanner (Nessus or Nessus Home).\n  - The version of the Nessus Engine.\n  - The port scanner(s) used.\n  - The port range scanned.\n  - The ping round trip time \n  - Whether credentialed or third-party patch management     checks are possible.\n  - Whether the display of superseded patches is enabled\n  - The date of the scan.\n  - The duration of the scan.\n  - The number of hosts scanned in parallel.\n  - The number of checks done in parallel.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to run 'netstat' on the remote host to enumerate the open ports. If 'netstat' is not available, the plugin will attempt to use 'ss'.\n\nSee the section 'plugins options' about configuring this plugin.\n\nNote: This plugin will run on Windows (using netstat.exe) in the event that the target being scanned is localhost.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to run 'netstat' on the remote host to enumerate the open ports. If 'netstat' is not available, the plugin will attempt to use 'ss'.\n\nSee the section 'plugins options' about configuring this plugin.\n\nNote: This plugin will run on Windows (using netstat.exe) in the event that the target being scanned is localhost.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Nessus was able to resolve the fully qualified domain name (FQDN) of the remote host.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "Using a combination of remote probes (e.g., TCP/IP, SMB, HTTP, NTP, SNMP, etc.), it is possible to guess the name of the remote operating system in use. It is also possible sometimes to guess the version of the operating system.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin connects to every SSL-related port and attempts to extract and dump the X.509 certificate.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "A Nessus daemon is listening on the remote port.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    },
+    {
+        "Hostname/IP": "192.168.122.207",
+        "CVE": [
+            "N/A"
+        ],
+        "CVSS Base Score": "N/A",
+        "Description": "This plugin attempts to determine the type and the version of the   remote web server.",
+        "Severity": "0",
+        "Exploit Available": "N/A",
+        "CWE": null
+    }
+]
